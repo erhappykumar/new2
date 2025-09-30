@@ -1,0 +1,76 @@
+ form{
+    border: 2px solid rgb(230, 131, 92);
+    width: 80vw;height:auto ;background-color: lightgrey;margin-left: 2vw;margin-bottom: 2vh;padding: 2vw;
+ 
+ }
+ form:hover{box-shadow: 10px 10px 10px rgb(138, 151, 153);
+ }
+    .p{
+        text-align: center;
+        color: rgb(129, 68, 68);
+        text-transform: capitalize;margin: ;
+    }
+    span{
+        color: rgb(151, 94, 94);font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1rem;text-align: center;
+        font-weight: bold;margin: 2vw;
+    }
+    .submit{margin-top: 5vh;
+        margin-left: 10vw;
+        width: 9vw;
+        height: 6vh;
+        background-color: rgb(202, 118, 69);
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size:1.3rem;border-color: antiquewhite;
+        visibility:hidden
+    }
+    .submit:hover{
+        background-color: rgb(209, 131, 95);
+        cursor: pointer;
+        box-shadow: 10px 1px 10px rgb(165, 90, 159);
+        background-image: linear-gradient(90deg,aqua, rgb(25, 180, 10), rgb(25, 0, 255),purple);
+    }
+    .username{
+        
+        width: inherit;
+        height: 10vh;
+        border-radius: 5vw;
+        text-align: center;
+        flex-wrap: wrap;
+        position:absolute;
+        font-size: 5vw;
+        background-color: rgba(250, 235, 215, 0.171);
+        color: rgba(255, 252, 248, 0.651);
+        
+    }
+    .username::placeholder{
+        color: rgba(255, 228, 196, 0.301);
+
+    }
+    .username:hover{
+        box-shadow: 10px 1px 10px rgb(163, 64, 134);
+    }
+    .password{margin-left: 1vw;
+        width: 90%;
+        height: 5vh;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .password:hover{
+        box-shadow: 10px 1px 10px rgb(165, 41, 113);
+    }
+    input{
+        outline: none;
+        border: 2px solid rgb(230, 131, 92);
+        width: 40px;margin: 0%;
+    }
+    .div{display: flexn;flex-wrap: wrap;background-image: url();color: rgb(31, 31, 230);}
+    body{background-color:khaki;}
+    .user{display: flex;flex-wrap: wrap;}
+    .card:hover{box-shadow: 10px 10px 10px rgb(138, 151, 153);background-color: lightgrey;}
+         /* linear-gradient(90deg,  rgb(75, 114, 185),rgba(57, 140, 196, 0.575));width: 100vw;} */
+    /* C:/Users/user1/Desktop/react/fullstack/public/img.jpg */
+   /* https://plus.unsplash.com/premium_photo-1673788332914-428b1f74d571?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhY2tncm91bmQlMjBpbmFnZSUyMG9uJTIwbW9uaXRvcnxlbnwwfHwwfHx8MA%3D%3D */
+/* body:hover{ background-image: linear-gradient(90deg,aqua, rgb(180, 189, 179), rgb(203, 200, 228),purple);} */
