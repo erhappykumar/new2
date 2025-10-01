@@ -41,21 +41,21 @@ function App() {
   return ( 
     <>
   <div className="user" id="okgggg">
+     
     <div className="div">
-     { <form onSubmit={handleSubmit}><h3 className="p" >Directory Lookup Tool</h3><br/>
+      
+     { <form onSubmit={handleSubmit}><h3 className="p" >User Directory Lookup</h3><br/>
        
         
-        <input type="text" name="username" id="user" onChange={handleForm} placeholder="Enter name ,city, mobile, address"className="username" />
-        <br />
-       
-       
-        <br /><br />
-        <input type="submit"  value="Search" className="submit"/>
+        <input type="text" name="username" id="user" onChange={handleForm} placeholder=" Enter name ,city, mobile, address               "className="username" />
+        
+        <input type="submit"  value="🔍 Search" className="submit"/>
         </form>}
     </div>
-    
+    <div className="itemContainer">
      {response1.map((item, index1) =><div className={`okt ${index1}`} key={index1}> <UserCard id={index1+10} fullName={response1[index1].full_name} city={response1[index1].city} Mobile_Number={response1[index1].mobile_number}  Email={response1[index1].email} Complete_Address={response1[index1].complete_address} index={index1}  /></div>)}</div>
-     
+     <img src="public/User_Directory_Lookup_tool.png" alt=""/>
+     </div>
     </>
   );
 }

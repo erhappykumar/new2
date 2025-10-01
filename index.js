@@ -4,13 +4,15 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import path, { dirname } from "path";
 import { Console } from "console";
+import dotenv from "dotenv";
+import { env } from "process";
+dotenv.config();
 const server = express();
 /////aaa
 server.use(bodyParser.json());
 const __dirname = path.resolve();
 ////////////corsOptions
-const uri =
-  "mongodb+srv://walmunia:v2ZWW1Qsz2ct7lL7@cluster0.wfe0x.mongodb.net/";
+const uri =process.env.URI;
 
 mongoose
   .connect(uri)
