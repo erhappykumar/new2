@@ -6,9 +6,10 @@ function App() {
   
   const [formData, setFormData] = useState({});
   const [userdata, setUserdata]= useState([]);
+  
 
   let response
-  
+  const k=['red','orange','purple','green']
   const a=[{"ak":"sonu kumar "}]
   
   const handleForm = (e) => {
@@ -34,28 +35,29 @@ function App() {
     //console.log("response1",response1);
     setUserdata(response1)
   };
+ 
 
 
-  return (
+  return ( 
     <>
-  <div className="user">
+  <div className="user" id="okgggg">
     <div className="div">
      { <form onSubmit={handleSubmit}><h3 className="p" >Directory Lookup Tool</h3><br/>
-        {/* <p>{JSON.stringify(formData)}</p> */}
+       
         
         <input type="text" name="username" id="user" onChange={handleForm} placeholder="Enter name ,city, mobile, address"className="username" />
         <br />
        
-        {/* <input type="password" name="password" id="pass" onChange={handleForm} placeholder="Enter password" className="password" /> */}
+       
         <br /><br />
         <input type="submit"  value="Search" className="submit"/>
         </form>}
     </div>
     
-     {response1.map((item, index1) =><div> <UserCard key={index1} fullName={response1[index1].full_name} city={response1[index1].city} Mobile_Number={response1[index1].mobile_number}  Email={response1[index1].email} Complete_Address={response1[index1].complete_address} index={index1} /></div>)}</div>
+     {response1.map((item, index1) =><div className={`okt ${index1}`} key={index1}> <UserCard id={index1+10} fullName={response1[index1].full_name} city={response1[index1].city} Mobile_Number={response1[index1].mobile_number}  Email={response1[index1].email} Complete_Address={response1[index1].complete_address} index={index1}  /></div>)}</div>
      
     </>
   );
 }
 
-export default App;
+export default React.memo(App);

@@ -1,12 +1,15 @@
- *{padding: 0%;margin:0%}
+
+ 
+ 
+ *{padding: 0%;margin:0%;box-sizing: border-box;}
  form{object-fit: cover;
     border: 2px solid rgb(226, 199, 189);
     border-radius: 1vw;
-    width:100vw;
+    width:98vw;
     height:auto ;background-color: lightgrey;margin-bottom: 2vh;;
    
  }
- form:hover{box-shadow: 10px 10px 10px rgb(138, 151, 153);
+ form{box-shadow: 10px 10px 10px rgb(138, 151, 153);
  }
     .p{
         text-align: center;
@@ -53,7 +56,7 @@
         
     }
     .username::placeholder{
-        color: rgba(255, 228, 196, 0.301);
+        color: rgba(41, 23, 0, 0.301);
 
     }
     .username:hover{
@@ -74,15 +77,31 @@
         width: 40px;margin: 0%;
     }
     .div{background-image: url();color: rgb(31, 31, 230);}
-    body{background-color:lightgrey;}
+    body{background-color:lightgrey;scrollbar-width:;}
     .user{display: flex;flex-wrap: wrap;}
-    .card:hover{box-shadow: 10px 10px 10px rgb(138, 151, 153);background-color: lightgrey;}
+     .card{box-shadow: 10px 10px 10px rgb(138, 151, 153);background-color: lightgrey;}
+    .card:hover{box-shadow: 6px 6px 10px 12px aqua;background-color: rgb(216, 108, 108);}
+    /* rgb(123, 231, 248) */
          /* linear-gradient(90deg,  rgb(75, 114, 185),rgba(57, 140, 196, 0.575));width: 100vw;} */
     /* C:/Users/user1/Desktop/react/fullstack/public/img.jpg */
    /* https://plus.unsplash.com/premium_photo-1673788332914-428b1f74d571?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJhY2tncm91bmQlMjBpbmFnZSUyMG9uJTIwbW9uaXRvcnxlbnwwfHwwfHx8MA%3D%3D */
 /* body:hover{ background-image: linear-gradient(90deg,aqua, rgb(180, 189, 179), rgb(203, 200, 228),purple);} */
-@media screen and (width >= 600px) {
+@media screen and (width <= 600px) {
   body {
- 
+ background-color: lightgray;box-sizing: border-box;
   }
-.submit{visibility: hidden;}}
+
+.card{width: auto;
+border: 1px solid gray;border-radius: 4vw;}
+}
+
+@media screen and (width > 600px){ 
+
+.card{ width: 200px;border: 1px solid gray;border-radius: 1vw;}
+}
+.user{
+    display: flex;flex-wrap: wrap;justify-content: space-evenly;z-index: 33;
+}
+.okg{
+    background-color: red;
+}
