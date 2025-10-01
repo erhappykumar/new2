@@ -15,10 +15,11 @@ function App() {
     e.preventDefault();
     console.log(e.target.value, e.target.name);
     setFormData({ ...formData, [e.target.name]: e.target.value });
+    handleSubmit;
   }; 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    response = await fetch("https://new1-tncn.onrender.com", {
+    response = await fetch("https://people-directory-veuq.onrender.com", {
       headers: { "Content-Type": "application/json" },
       method: "POST",
       body: JSON.stringify(formData),
@@ -46,7 +47,8 @@ function App() {
         <br />
        
         {/* <input type="password" name="password" id="pass" onChange={handleForm} placeholder="Enter password" className="password" /> */}
-        <input type="submit"  value="submit" className="submit"/>
+        <br /><br />
+        <input type="submit"  value="Search" className="submit"/>
         </form>}
     </div>
     

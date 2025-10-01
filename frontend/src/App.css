@@ -1,7 +1,10 @@
- form{
-    border: 2px solid rgb(230, 131, 92);
-    width: 80vw;height:auto ;background-color: lightgrey;margin-left: 2vw;margin-bottom: 2vh;padding: 2vw;
- 
+ *{padding: 0%;margin:0%}
+ form{object-fit: cover;
+    border: 2px solid rgb(226, 199, 189);
+    border-radius: 1vw;
+    width:100vw;
+    height:auto ;background-color: lightgrey;margin-bottom: 2vh;;
+   
  }
  form:hover{box-shadow: 10px 10px 10px rgb(138, 151, 153);
  }
@@ -16,27 +19,31 @@
         font-weight: bold;margin: 2vw;
     }
     .submit{margin-top: 5vh;
-        margin-left: 10vw;
-        width: 9vw;
-        height: 6vh;
+        margin-left: 50vw;
+        min-width:fit-content;
+        width: 20vw;
+        height: 10vh;
         background-color: rgb(202, 118, 69);
         color: white;
         font-weight: bold;
-        border-radius: 10px;
+        border: 0cap;
+
+        border-radius: 10vw;
         font-size:1.3rem;border-color: antiquewhite;
-        visibility:hidden
+        
     }
     .submit:hover{
-        background-color: rgb(209, 131, 95);
+        /* background-color: rgb(209, 131, 95); */
         cursor: pointer;
         box-shadow: 10px 1px 10px rgb(165, 90, 159);
         background-image: linear-gradient(90deg,aqua, rgb(25, 180, 10), rgb(25, 0, 255),purple);
     }
     .username{
         
-        width: inherit;
+        width:96vw;
         height: 10vh;
-        border-radius: 5vw;
+        margin-left: 1vw;
+        border-radius: 20vw;
         text-align: center;
         flex-wrap: wrap;
         position:absolute;
@@ -66,8 +73,8 @@
         border: 2px solid rgb(230, 131, 92);
         width: 40px;margin: 0%;
     }
-    .div{display: flexn;flex-wrap: wrap;background-image: url();color: rgb(31, 31, 230);}
-    body{background-color:khaki;}
+    .div{background-image: url();color: rgb(31, 31, 230);}
+    body{background-color:lightgrey;}
     .user{display: flex;flex-wrap: wrap;}
     .card:hover{box-shadow: 10px 10px 10px rgb(138, 151, 153);background-color: lightgrey;}
          /* linear-gradient(90deg,  rgb(75, 114, 185),rgba(57, 140, 196, 0.575));width: 100vw;} */
