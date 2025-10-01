@@ -52,7 +52,7 @@ function App() {
         </form>}
     </div>
     
-     {response1.map((item, index1) =><div> <UserCard key={index1} fullName={response1.full_name} city={response1[index1].city} Mobile_Number={response1[index1].mobile_number}  Email={response1[index1].email} Complete_Address={response1[index1].complete_address} index={index1} /></div>)}</div>
+     {response1.map((item, index1) =><div> <UserCard key={index1} fullName={response1[index1].full_name} city={response1[index1].city} Mobile_Number={response1[index1].mobile_number}  Email={response1[index1].email} Complete_Address={response1[index1].complete_address} index={index1} /></div>)}</div>
      
     </>
   );
