@@ -160,7 +160,9 @@ img {
   }
 .itemContainer{
     display: flex;flex-wrap: wrap;
-    margin-top: 25vw;
+    margin-top: 30vw;
+    justify-content: space-evenly;
+    
 }
 .p{
     font-size: 6vw;
