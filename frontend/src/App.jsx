@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UserCard from "./UserCard";
+import bgimg from "/public/user.png"
 
 let response1=[]
 function App() {
@@ -54,7 +55,7 @@ function App() {
     </div>
     <div className="itemContainer">
      {response1.map((item, index1) =><div className={`okt ${index1}`} key={index1}> <UserCard id={index1+10} fullName={response1[index1].full_name} city={response1[index1].city} Mobile_Number={response1[index1].mobile_number}  Email={response1[index1].email} Complete_Address={response1[index1].complete_address} index={index1}  /></div>)}</div>
-     <img src="public/User_Directory_Lookup_tool.png" alt=""/>
+     <img src={bgimg} alt=""/>
      </div>
     </>
   );
