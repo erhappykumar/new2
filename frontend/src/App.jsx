@@ -48,7 +48,7 @@ function App() {
      { <form onSubmit={handleSubmit}><h3 className="p" >User Directory Lookup</h3><br/>
        
         
-        <input type="text" name="username" id="user" onChange={handleForm} placeholder=" Enter name ,city, mobile, address               "className="username" />
+        <input type="search" name="username" id="user" onChange={handleForm} placeholder=" Enter name ,city, mobile, address               "className="username" />
         
         <input type="submit"  value="🔍 Search" className="submit"/>
         </form>}
